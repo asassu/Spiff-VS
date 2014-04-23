@@ -32,6 +32,9 @@ namespace Spiff_Platformer
         Texture2D MyBackground;
         Vector2 MyBGPosition = Vector2.Zero;
 
+        bool jumping = false; //Is the character jumping?
+        float startY, jumpspeed = 0; //startY to tell us //where it lands, jumpspeed to see how fast it jumps
+
         #endregion
 
 
@@ -102,21 +105,7 @@ namespace Spiff_Platformer
             //Updating keyboard state
             KeyboardState keyboardState = Keyboard.GetState();
 
-            //HEY LISTEN: Replace me with 
-            if (keyboardState.IsKeyDown(Keys.Up) || keyboardState.IsKeyDown(Keys.W))
-            {
-                if (Spiff.position.Y - 5 > 0)
-                {
-                    Spiff.position += new Vector2(0, -5);
-                }
-            }
-            if (keyboardState.IsKeyDown(Keys.Down) || keyboardState.IsKeyDown(Keys.S))
-            {
-                if (Spiff.position.Y + 5 > 0)
-                {
-                    Spiff.position += new Vector2(0, 5);
-                }
-            }
+            //HEY LISTEN: Replace me with a function?
             if (keyboardState.IsKeyDown(Keys.Left) || keyboardState.IsKeyDown(Keys.A))
             {
                 if (Spiff.position.Y - 5 > 0)
@@ -129,6 +118,29 @@ namespace Spiff_Platformer
                 if (Spiff.position.Y - 5 > 0)
                 {
                     Spiff.position += new Vector2(5, 0);
+                }
+            }
+
+            if (jumping)
+            {
+                Spiff.position += new Vector2(0, jumpspeed);//Making it go up
+                jumpspeed += 1;//Some math
+                if (Spiff.position.Y >= startY)
+                //If it's farther than ground
+                {
+                    float currentX = Spiff.position.X;
+                    //HEY LISTEN: Replace me with a collision check!
+                    Spiff.position = new Vector2(currentX, startY);//Then set it on
+                    jumping = false;
+                }
+            }
+            else
+            {
+                if (keyboardState.IsKeyDown(Keys.Space))
+                {
+                    startY = Spiff.position.Y;
+                    jumping = true;
+                    jumpspeed = -14;//Give it upward thrust
                 }
             }
 
