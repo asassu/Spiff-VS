@@ -6,3 +6,4 @@ C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Pl
 C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\obj\x86\Debug\Spiff_Platformer.pdb
 C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\fightingCat.xnb
 C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\cloudBG.xnb
+C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Long1.xnb

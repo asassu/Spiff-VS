@@ -19,6 +19,15 @@
       <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\cloudBG.xnb</Output>
       <Time>2014-04-22T23:03:12.2550736-06:00</Time>
     </Item>
+    <Item>
+      <Source>Long1.png</Source>
+      <Name>Long1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Long1.xnb</Output>
+      <Time>2014-04-23T00:37:57.8172692-06:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{DC5AA2A7-281F-49F3-BB6E-3D64241CAF21}</ContentProjectGUID>

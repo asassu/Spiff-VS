@@ -26,7 +26,19 @@ namespace Spiff_Platformer
             scorePlayer = 0;
         }
 
-        public bool Collides1(playerSprite otherSprite)
+        public bool Collides1(solidGround otherSprite)
+        {
+            // check if two sprites intersect 
+            if (this.position.X + this.size.X > otherSprite.position.X &&
+            this.position.X < otherSprite.position.X + otherSprite.size.X &&
+            this.position.Y + this.size.Y > otherSprite.position.Y &&
+            this.position.Y < otherSprite.position.Y + otherSprite.size.Y)
+                return true;
+            else
+                return false;
+        }
+
+        public bool CollidesTop(solidGround otherSprite)
         {
             // check if two sprites intersect 
             if (this.position.X + this.size.X > otherSprite.position.X &&

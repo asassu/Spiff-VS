@@ -25,6 +25,7 @@ namespace Spiff_Platformer
         KeyboardState oldState;
 
         playerSprite Spiff;
+        solidGround Long1;
 
         bool gamePaused = true;
         bool gameStartScreen = true;
@@ -34,6 +35,9 @@ namespace Spiff_Platformer
 
         bool jumping = false; //Is the character jumping?
         float startY, jumpspeed = 0; //startY to tell us //where it lands, jumpspeed to see how fast it jumps
+        bool canFall = false;
+
+        float worldGround = WINDOW_HEIGHT - 150;
 
         #endregion
 
@@ -71,8 +75,10 @@ namespace Spiff_Platformer
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Spiff = new playerSprite(Content.Load<Texture2D>("fightingCat"), new Vector2(200, WINDOW_HEIGHT - 150), new
-           Vector2(64f, 64f),
-           graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
+                Vector2(64f, 64f), graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
+
+            Long1 = new solidGround(Content.Load<Texture2D>("Long1"), new Vector2(400, WINDOW_HEIGHT - 180), new
+                Vector2(248f, 60f), graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
 
             MyBackground = Content.Load<Texture2D>("cloudBG");
 
@@ -121,15 +127,39 @@ namespace Spiff_Platformer
                 }
             }
 
+            if(!Spiff.Collides1(Long1) && canFall)
+            {
+                jumping = true;
+                jumpspeed = 0;
+                Spiff.position += new Vector2(0, jumpspeed);//Making it go up
+                jumpspeed += 1;//Some math
+
+                if (Spiff.position.Y >= worldGround)
+                //If it's farther than ground
+                {
+                    float currentX = Spiff.position.X;
+                    Spiff.position = new Vector2(currentX, worldGround);//Then set it on
+                    jumping = false;
+                    canFall = false;
+                }
+            }
+
             if (jumping)
             {
                 Spiff.position += new Vector2(0, jumpspeed);//Making it go up
                 jumpspeed += 1;//Some math
+                if(Spiff.Collides1(Long1))
+                {
+                    float currentX = Spiff.position.X;
+                    float currentY = Spiff.position.Y;
+                    Spiff.position = new Vector2(currentX, currentY);//Then set it on
+                    jumping = false;
+                    canFall = true;
+                }
                 if (Spiff.position.Y >= startY)
                 //If it's farther than ground
                 {
                     float currentX = Spiff.position.X;
-                    //HEY LISTEN: Replace me with a collision check!
                     Spiff.position = new Vector2(currentX, startY);//Then set it on
                     jumping = false;
                 }
@@ -159,7 +189,11 @@ namespace Spiff_Platformer
 
             spriteBatch.Begin();
             spriteBatch.Draw(MyBackground, MyBGPosition, Color.White);
+
+            Long1.Draw(spriteBatch);
+
             Spiff.Draw(spriteBatch);
+            
             spriteBatch.End();
 
             base.Draw(gameTime);
