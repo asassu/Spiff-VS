@@ -1,0 +1,8 @@
+C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Spiff_Platformer.exe
+C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Spiff_Platformer.pdb
+C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\obj\x86\Debug\Spiff_Platformer.csprojResolveAssemblyReference.cache
+C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\obj\x86\Debug\Spiff_Platformer.exe
+C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\obj\x86\Debug\Spiff_Platformer.pdb
+C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\fightingCat.xnb
+C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\cloudBG.xnb
