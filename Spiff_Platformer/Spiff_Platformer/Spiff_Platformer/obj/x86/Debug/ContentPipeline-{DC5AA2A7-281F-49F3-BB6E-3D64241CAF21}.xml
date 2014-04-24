@@ -128,15 +128,6 @@
       <Time>2014-04-23T18:50:10.2793422-06:00</Time>
     </Item>
     <Item>
-      <Source>Fonts\Hud.spritefont</Source>
-      <Name>Fonts\Hud</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Fonts\Hud.xnb</Output>
-      <Time>2014-04-23T13:46:44.5790357-06:00</Time>
-    </Item>
-    <Item>
       <Source>Tiles\OrbR.png</Source>
       <Name>Tiles\OrbR</Name>
       <Importer>TextureImporter</Importer>
@@ -225,6 +216,15 @@
       <Options>None</Options>
       <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Fonts\System.xnb</Output>
       <Time>2014-04-23T22:00:27.240355-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Overlays\titlescreen.png</Source>
+      <Name>Overlays\titlescreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Overlays\titlescreen.xnb</Output>
+      <Time>2014-04-23T22:45:09.6507801-06:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
