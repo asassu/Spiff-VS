@@ -28,11 +28,13 @@ namespace Spiff_Platformer
         private Texture2D winOverlay;
         private Texture2D loseOverlay;
         private Texture2D diedOverlay;
+        private Texture2D titleOverlay;
 
         // Meta-level game state.
         private int levelIndex = -1;
         private Level level;
         private bool wasContinuePressed;
+        private bool showTitleMessage = true;
 
         // When the time remaining is less than the warning time, it blinks on the hud
         private static readonly TimeSpan WarningTime = TimeSpan.FromSeconds(30);
@@ -73,6 +75,7 @@ namespace Spiff_Platformer
             winOverlay = Content.Load<Texture2D>("Overlays/victory");
             loseOverlay = Content.Load<Texture2D>("Overlays/failure");
             diedOverlay = Content.Load<Texture2D>("Overlays/failure");
+            titleOverlay = Content.Load<Texture2D>("Overlays/titlescreen");
 
             //Known issue that you get exceptions if you use Media PLayer while connected to your PC
             //See http://social.msdn.microsoft.com/Forums/en/windowsphone7series/thread/c8a243d2-d360-46b1-96bd-62b1ef268c66
@@ -113,12 +116,17 @@ namespace Spiff_Platformer
             accelerometerState = Accelerometer.GetState();
 
             // Exit the game when back is pressed.
-            if (gamePadState.Buttons.Back == ButtonState.Pressed)
+            if (gamePadState.Buttons.Back == ButtonState.Pressed || keyboardState.IsKeyDown(Keys.Escape))
                 Exit();
 
             bool continuePressed =
                 keyboardState.IsKeyDown(Keys.Space) ||
                 gamePadState.IsButtonDown(Buttons.A);
+
+            if(showTitleMessage && continuePressed)
+            {
+                showTitleMessage = false;
+            }
 
             // Perform the appropriate action to advance the game and
             // to get the player back to playing.
@@ -207,9 +215,15 @@ namespace Spiff_Platformer
             // Draw score
             float timeHeight = hudFont.MeasureString(timeString).Y;
             DrawShadowedString(hudFont, "SCORE: " + level.Score.ToString(), hudLocation + new Vector2(0.0f, timeHeight * 1.2f), Color.White);
-           
+
             // Determine the status overlay message to show.
             Texture2D status = null;
+
+            if (showTitleMessage)
+            {
+                status = titleOverlay;
+            }
+           
             if (level.TimeRemaining == TimeSpan.Zero)
             {
                 if (level.ReachedExit)

@@ -12,7 +12,6 @@ Content\Tiles\DotsY0.xnb
 Content\Backgrounds\Terminal.xnb
 Content\Sprites\MonsterA\Walking.xnb
 Content\Sprites\MonsterA\Idle.xnb
-Content\Fonts\Hud.xnb
 Content\Tiles\OrbR.xnb
 Content\Sprites\OrbW.xnb
 Content\Overlays\victory.xnb
@@ -23,6 +22,7 @@ Content\Sounds\woosh.xnb
 Content\Sounds\collect.xnb
 Content\Sounds\success.xnb
 Content\Fonts\System.xnb
+Content\Overlays\titlescreen.xnb
 Content\Levels\0.txt
 Content\Levels\1.txt
 Content\Levels\2.txt
