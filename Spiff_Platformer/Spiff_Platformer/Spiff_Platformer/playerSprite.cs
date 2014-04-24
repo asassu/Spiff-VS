@@ -20,7 +20,6 @@ namespace Spiff_Platformer
         // Sounds
         private SoundEffect killedSound;
         private SoundEffect jumpSound;
-        private SoundEffect fallSound;
 
         public Level Level
         {
@@ -135,9 +134,8 @@ namespace Spiff_Platformer
             localBounds = new Rectangle(left, top, width, height);
 
             // Load sounds.            
-            killedSound = Level.Content.Load<SoundEffect>("Sounds/PlayerKilled");
-            jumpSound = Level.Content.Load<SoundEffect>("Sounds/PlayerJump");
-            fallSound = Level.Content.Load<SoundEffect>("Sounds/PlayerFall");
+            killedSound = Level.Content.Load<SoundEffect>("Sounds/dying_kitten");
+            jumpSound = Level.Content.Load<SoundEffect>("Sounds/woosh");
         }
 
         /// <summary>
@@ -413,8 +411,6 @@ namespace Spiff_Platformer
 
             if (killedBy != null)
                 killedSound.Play();
-            else
-                fallSound.Play();
 
             sprite.PlayAnimation(dieAnimation);
         }

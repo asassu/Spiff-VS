@@ -105,7 +105,7 @@ namespace Spiff_Platformer
             }
 
             // Load sounds.
-            exitReachedSound = Content.Load<SoundEffect>("Sounds/ExitReached");
+            exitReachedSound = Content.Load<SoundEffect>("Sounds/success");
         }
 
         /// <summary>

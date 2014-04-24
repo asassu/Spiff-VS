@@ -29,51 +29,6 @@
       <Time>2014-04-23T13:46:45.161069-06:00</Time>
     </Item>
     <Item>
-      <Source>Sprites\Player\Celebrate.png</Source>
-      <Name>Sprites\Player\Celebrate</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate.xnb</Output>
-      <Time>2014-04-23T13:46:45.4010827-06:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\Player\Die.png</Source>
-      <Name>Sprites\Player\Die</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Sprites\Player\Die.xnb</Output>
-      <Time>2014-04-23T13:46:45.4130834-06:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\Player\Idle.png</Source>
-      <Name>Sprites\Player\Idle</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Sprites\Player\Idle.xnb</Output>
-      <Time>2014-04-23T13:46:45.424084-06:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\Player\Jump.png</Source>
-      <Name>Sprites\Player\Jump</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Sprites\Player\Jump.xnb</Output>
-      <Time>2014-04-23T13:46:45.4340846-06:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\Player\Run.png</Source>
-      <Name>Sprites\Player\Run</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Sprites\Player\Run.xnb</Output>
-      <Time>2014-04-23T13:46:45.4460853-06:00</Time>
-    </Item>
-    <Item>
       <Source>Tiles\DotsB0.png</Source>
       <Name>Tiles\DotsB0</Name>
       <Importer>TextureImporter</Importer>
@@ -182,78 +137,6 @@
       <Time>2014-04-23T13:46:44.5790357-06:00</Time>
     </Item>
     <Item>
-      <Source>Sounds\ExitReached.wma</Source>
-      <Name>Sounds\ExitReached</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Sounds\ExitReached.xnb</Output>
-      <Time>2014-04-23T13:46:44.6560401-06:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\GemCollected.wma</Source>
-      <Name>Sounds\GemCollected</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Sounds\GemCollected.xnb</Output>
-      <Time>2014-04-23T13:46:44.6680408-06:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\MonsterKilled.wma</Source>
-      <Name>Sounds\MonsterKilled</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Sounds\MonsterKilled.xnb</Output>
-      <Time>2014-04-23T13:46:44.6790414-06:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\Music.wma</Source>
-      <Name>Sounds\Music</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Sounds\Music.xnb</Output>
-      <Time>2014-04-23T13:46:45.0990654-06:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\PlayerFall.wma</Source>
-      <Name>Sounds\PlayerFall</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Sounds\PlayerFall.xnb</Output>
-      <Time>2014-04-23T13:46:45.1170665-06:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\PlayerJump.wma</Source>
-      <Name>Sounds\PlayerJump</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Sounds\PlayerJump.xnb</Output>
-      <Time>2014-04-23T13:46:45.1320673-06:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\PlayerKilled.wma</Source>
-      <Name>Sounds\PlayerKilled</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Sounds\PlayerKilled.xnb</Output>
-      <Time>2014-04-23T13:46:45.1420679-06:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\Powerup.wma</Source>
-      <Name>Sounds\Powerup</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Sounds\Powerup.xnb</Output>
-      <Time>2014-04-23T13:46:45.1520685-06:00</Time>
-    </Item>
-    <Item>
       <Source>Tiles\OrbR.png</Source>
       <Name>Tiles\OrbR</Name>
       <Importer>TextureImporter</Importer>
@@ -297,6 +180,51 @@
       <Options>None</Options>
       <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Sprites\Player\KittenDeath.xnb</Output>
       <Time>2014-04-23T20:12:56.7184063-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\dying_kitten.wav</Source>
+      <Name>Sounds\dying_kitten</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Sounds\dying_kitten.xnb</Output>
+      <Time>2014-04-23T21:23:45.9704496-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\woosh.wav</Source>
+      <Name>Sounds\woosh</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Sounds\woosh.xnb</Output>
+      <Time>2014-04-23T21:29:21.5086413-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\collect.wav</Source>
+      <Name>Sounds\collect</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Sounds\collect.xnb</Output>
+      <Time>2014-04-23T21:34:58.341907-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\success.wav</Source>
+      <Name>Sounds\success</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Sounds\success.xnb</Output>
+      <Time>2014-04-23T21:41:14.9034451-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\System.spritefont</Source>
+      <Name>Fonts\System</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrea\Documents\School\OOAD\Spiff_Platformer\Spiff_Platformer\Spiff_Platformer\bin\x86\Debug\Content\Fonts\System.xnb</Output>
+      <Time>2014-04-23T22:00:27.240355-06:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

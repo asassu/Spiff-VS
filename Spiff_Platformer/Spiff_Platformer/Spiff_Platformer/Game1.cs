@@ -67,7 +67,7 @@ namespace Spiff_Platformer
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // Load fonts
-            hudFont = Content.Load<SpriteFont>("Fonts/Hud");
+            hudFont = Content.Load<SpriteFont>("Fonts/System");
 
             // Load overlay textures
             winOverlay = Content.Load<Texture2D>("Overlays/victory");
@@ -196,7 +196,7 @@ namespace Spiff_Platformer
                 level.ReachedExit ||
                 (int)level.TimeRemaining.TotalSeconds % 2 == 0)
             {
-                timeColor = Color.Yellow;
+                timeColor = Color.White;
             }
             else
             {
@@ -206,7 +206,7 @@ namespace Spiff_Platformer
 
             // Draw score
             float timeHeight = hudFont.MeasureString(timeString).Y;
-            DrawShadowedString(hudFont, "SCORE: " + level.Score.ToString(), hudLocation + new Vector2(0.0f, timeHeight * 1.2f), Color.Yellow);
+            DrawShadowedString(hudFont, "SCORE: " + level.Score.ToString(), hudLocation + new Vector2(0.0f, timeHeight * 1.2f), Color.White);
            
             // Determine the status overlay message to show.
             Texture2D status = null;
