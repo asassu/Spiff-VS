@@ -72,11 +72,19 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accelerometer.cs" />
+    <Compile Include="Animation.cs" />
+    <Compile Include="AnimationPlayer.cs" />
+    <Compile Include="Circle.cs" />
+    <Compile Include="Enemy.cs" />
+    <Compile Include="Gem.cs" />
+    <Compile Include="Level.cs" />
     <Compile Include="playerSprite.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
-    <Compile Include="solidGround.cs" />
+    <Compile Include="RectangleExtensions.cs" />
+    <Compile Include="Tile.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
