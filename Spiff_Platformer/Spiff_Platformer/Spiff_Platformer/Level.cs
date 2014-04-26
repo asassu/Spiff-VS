@@ -33,7 +33,7 @@ namespace Spiff_Platformer
         private List<Gem> gems = new List<Gem>();
         private List<Enemy> enemies = new List<Enemy>();
 
-        // Key locations in the level.        
+        // Key locations in the level.
         private Vector2 start;
         private Point exit = InvalidPosition;
         private static readonly Point InvalidPosition = new Point(-1, -1);
@@ -45,7 +45,7 @@ namespace Spiff_Platformer
         {
             get { return score; }
         }
-        int score;
+        int score = 0;
 
         public bool ReachedExit
         {

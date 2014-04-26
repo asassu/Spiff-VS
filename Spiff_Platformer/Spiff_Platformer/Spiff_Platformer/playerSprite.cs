@@ -230,9 +230,7 @@ namespace Spiff_Platformer
             // Check if the player wants to jump.
             isJumping =
                 gamePadState.IsButtonDown(JumpButton) ||
-                keyboardState.IsKeyDown(Keys.Space) ||
-                keyboardState.IsKeyDown(Keys.Up) ||
-                keyboardState.IsKeyDown(Keys.W);
+                keyboardState.IsKeyDown(Keys.Space);
         }
 
         /// <summary>

@@ -44,6 +44,8 @@ namespace Spiff_Platformer
         private GamePadState gamePadState;
         private KeyboardState keyboardState;
         private AccelerometerState accelerometerState;
+
+        private int overallScore = 0;
         
         // The number of levels in the Levels directory of our content. We assume that
         // levels in our content are 0-based and that all numbers under this constant
@@ -150,12 +152,16 @@ namespace Spiff_Platformer
 
         private void LoadNextLevel()
         {
+
             // move to the next level
             levelIndex = (levelIndex + 1) % numberOfLevels;
 
             // Unloads the content for the current level before loading the next one.
             if (level != null)
+            {
+                overallScore += level.Score;
                 level.Dispose();
+            }
 
             // Load the level.
             string levelPath = string.Format("Content/Levels/{0}.txt", levelIndex);
@@ -214,7 +220,8 @@ namespace Spiff_Platformer
 
             // Draw score
             float timeHeight = hudFont.MeasureString(timeString).Y;
-            DrawShadowedString(hudFont, "SCORE: " + level.Score.ToString(), hudLocation + new Vector2(0.0f, timeHeight * 1.2f), Color.White);
+            int currentScore = overallScore + level.Score;
+            DrawShadowedString(hudFont, "SCORE: " + currentScore.ToString(), hudLocation + new Vector2(0.0f, timeHeight * 1.2f), Color.White);
 
             // Determine the status overlay message to show.
             Texture2D status = null;
