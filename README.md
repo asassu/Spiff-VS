@@ -29,4 +29,4 @@ Sounds:<br>
 </ul>
 ##Screenshots
 ![alt tag](TitleScreen.png)<br />
-![alt tag](Screenshot.png)<br />
+![alt tag](Gameplay.png)<br />
